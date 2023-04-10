@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Coffee House</string>
+    <string name="home">Home</string>
+    <string name="add_coffee">Add Coffee</string>
+    <string name="all_coffees">All Coffees</string>
+    <string name="about_us">About us</string>
+    <string name="our_history">Our history</string>
 </resources>

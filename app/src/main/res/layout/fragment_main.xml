@@ -14,61 +14,67 @@
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
+        android:text="@string/home"
+        android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Teste" />
+        tools:text="Home" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:paddingVertical="8dp"
         app:layout_constraintTop_toBottomOf="@id/title">
 
         <TableRow>
-            <TextView
-                android:id="@+id/listCoffees"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:textSize="24sp"
-                tools:text="Add" />
 
-            <TextView
-                android:id="@+id/addCoffees"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_coffee"
+                style="@style/Widget.Material3.Button"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:textSize="24sp"
-                tools:text="List" />
+                android:text="@string/add_coffee"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/list_coffees"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_coffees"
+                android:textSize="18sp" />
         </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/about"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:textSize="24sp"
-                tools:text="About" />
 
-            <TextView
-                android:id="@+id/history"
+        <TableRow>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/about_us"
+                style="@style/Widget.Material3.Button.ElevatedButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/about_us"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/history"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:textSize="24sp"
-                tools:text="History" />
+                android:text="@string/our_history"
+                android:textSize="18sp" />
         </TableRow>
     </TableLayout>
 
