@@ -9,5 +9,24 @@
         android:id="@+id/main_fragment"
         android:name="com.ifrs.coffeehouse.MainFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_fragment_to_add_coffee_fragment"
+            app:destination="@id/add_coffee_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_allCoffeesFragment"
+            app:destination="@id/allCoffeesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_coffee_fragment"
+        android:name="com.ifrs.coffeehouse.AddCoffeeFragment"
+        android:label="@string/add_coffee"
+        tools:layout="@layout/fragment_add_coffee"/>
+
+    <fragment
+        android:id="@+id/allCoffeesFragment"
+        android:name="com.ifrs.coffeehouse.AllCoffeesFragment"
+        android:label="@string/all_coffees"
+        tools:layout="@layout/fragment_all_coffees"/>
 </navigation>
