@@ -17,7 +17,7 @@ class CoffeeMapper {
 
     fun toDomain(entity: CoffeeEntity): Coffee {
         return Coffee(
-            id = entity.id,
+            id = entity.id!!,
             name = entity.name,
             country = entity.country,
             roastingLevel = RoastingLevel.valueOf(entity.roastingLevel)

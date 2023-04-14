@@ -1,7 +1,10 @@
 package com.ifrs.coffeehouse.domain
 
-enum class RoastingLevel {
-    Low,
-    Medium,
-    High
+import androidx.annotation.ColorRes
+import com.ifrs.coffeehouse.R
+
+enum class RoastingLevel(@ColorRes val color: Int) {
+    Low(R.color.colorRoastingLow),
+    Medium(R.color.colorPrimaryVariant),
+    High(R.color.colorPrimary)
 }
