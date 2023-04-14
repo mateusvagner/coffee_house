@@ -1,4 +1,4 @@
-package com.ifrs.coffeehouse
+package com.ifrs.coffeehouse.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
