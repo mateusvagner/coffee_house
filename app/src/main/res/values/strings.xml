@@ -9,4 +9,6 @@
     <string name="country">Country</string>
     <string name="roasting_level">Roasting Level</string>
     <string name="save">Save</string>
+    <string name="ok">Ok</string>
+    <string name="not_implemented">Not implemented yet</string>
 </resources>

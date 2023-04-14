@@ -15,7 +15,6 @@ import com.ifrs.coffeehouse.domain.Coffee
 import com.ifrs.coffeehouse.domain.RoastingLevel
 import com.ifrs.coffeehouse.domain.mapper.CoffeeMapper
 
-
 class AddCoffeeFragment : Fragment() {
 
     private lateinit var binding: FragmentAddCoffeeBinding

@@ -9,24 +9,32 @@
         android:id="@+id/main_fragment"
         android:name="com.ifrs.coffeehouse.ui.MainFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_main_fragment_to_add_coffee_fragment"
-            app:destination="@id/add_coffee_fragment" />
+            app:destination="@id/add_coffee_fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/action_main_fragment_to_allCoffeesFragment"
-            app:destination="@id/allCoffeesFragment" />
+            app:destination="@id/allCoffeesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
 
     <fragment
         android:id="@+id/add_coffee_fragment"
         android:name="com.ifrs.coffeehouse.ui.AddCoffeeFragment"
         android:label="@string/add_coffee"
-        tools:layout="@layout/fragment_add_coffee"/>
+        tools:layout="@layout/fragment_add_coffee" />
 
     <fragment
         android:id="@+id/allCoffeesFragment"
         android:name="com.ifrs.coffeehouse.ui.AllCoffeesFragment"
         android:label="@string/all_coffees"
-        tools:layout="@layout/fragment_all_coffees"/>
+        tools:layout="@layout/fragment_all_coffees" />
 </navigation>
