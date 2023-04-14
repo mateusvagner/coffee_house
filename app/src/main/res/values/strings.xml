@@ -5,4 +5,8 @@
     <string name="all_coffees">All Coffees</string>
     <string name="about_us">About us</string>
     <string name="our_history">Our history</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="roasting_level">Roasting Level</string>
+    <string name="save">Save</string>
 </resources>
