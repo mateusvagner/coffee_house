@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorSecondaryVariant"
     android:padding="16dp"
-    tools:context=".MainFragment">
+    tools:context=".ui.MainFragment">
 
     <TextView
         android:id="@+id/title"

@@ -11,5 +11,7 @@
 
     <!-- Theme -->
     <color name="colorPrimary">#633B16</color>
+    <color name="colorPrimaryVariant">#83553B</color>
     <color name="colorSecondaryVariant">#E1D4C6</color>
+    <color name="colorRoastingLow">#D1B89D</color>
 </resources>
