@@ -4,6 +4,8 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
 }
 
+apply plugin: 'kotlin-kapt'
+
 android {
     viewBinding {
         enabled = true
@@ -59,4 +61,5 @@ dependencies {
     // Room
     implementation 'androidx.room:room-runtime:2.5.1'
     annotationProcessor 'androidx.room:room-compiler:2.5.1'
+    kapt 'androidx.room:room-compiler:2.5.1'
 }
