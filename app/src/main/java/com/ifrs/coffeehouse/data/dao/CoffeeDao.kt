@@ -1,9 +1,6 @@
 package com.ifrs.coffeehouse.data.dao
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 import com.ifrs.coffeehouse.data.entity.CoffeeEntity
 
 @Dao
@@ -12,7 +9,7 @@ interface CoffeeDao {
     @Query("SELECT * FROM coffee")
     fun getAll(): List<CoffeeEntity>
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(vararg coffee: CoffeeEntity)
 
     @Delete

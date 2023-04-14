@@ -13,19 +13,20 @@ import com.ifrs.coffeehouse.data.entity.CoffeeEntity
     version = 1
 )
 abstract class CoffeeHouseAppDatabase : RoomDatabase() {
-
-    private var appDatabase: CoffeeHouseAppDatabase? = null
-
     abstract fun coffeeDao(): CoffeeDao
 
-    open fun getInstance(context: Context): CoffeeHouseAppDatabase? {
-        if (appDatabase == null) {
-            appDatabase = databaseBuilder(
+    companion object {
+        private var appDatabase: CoffeeHouseAppDatabase? = null
+        fun getInstance(context: Context) = appDatabase ?: synchronized(this) {
+
+            val localInstanceAppDatabase = databaseBuilder(
                 context.applicationContext,
                 CoffeeHouseAppDatabase::class.java,
                 "database_name"
             ).allowMainThreadQueries().build()
+
+            appDatabase = localInstanceAppDatabase
+            appDatabase!!
         }
-        return appDatabase
     }
 }
